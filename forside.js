@@ -39,13 +39,13 @@ function toggleMenuLuk() {
 
 //  ---------------------------------------------------------------------------------
 
-const url = "https://babushka-dd8a.restdb.io/rest/menu";
+const url = "https://tema7slik-1f37.restdb.io/rest/slik";
 // settings, (test data, tag link, husk at fjerne max
 // key = database, API keys, manage dem --> Selve nøglen
 
 const options = {
   headers: {
-    "x-apikey": "600ec2fb1346a1524ff12de4",
+    "x-apikey": "620e5bf934fd621565858739",
   },
 };
 
@@ -91,18 +91,18 @@ function vis(json, x) {
   console.log(json);
 
   main.textContent = "";
-  json.forEach((retter) => {
-    if (retter.kategori == x || x == "alt") {
+  json.forEach((slik) => {
+    if (slik.kategori == x || x == "alt") {
       const klon = template.cloneNode(true);
 
       klon.querySelector(".billedeurl").src =
-        "images/" + retter.billednavn + "-md.jpg";
-      klon.querySelector(".navn").textContent = retter.navn;
+        "tema7billeder/" + slik.billede + ".jpg";
+      klon.querySelector(".navn").textContent = slik.navn;
       // klon.querySelector(".kortbeskrivelse").textContent =
       //   retter.kortbeskrivelse;
-      klon.querySelector(".pris").textContent = retter.pris + " kr.";
+      klon.querySelector(".pris").textContent = slik.pris + " kr.";
       klon.querySelector("article").addEventListener("click", () => {
-        visDetaljer(retter);
+        visDetaljer(slik);
       });
       // klon.querySelector("article").addEventListener("click", () => {
       //   location.href = `retSingleView.html?id=${retter._id}`;
