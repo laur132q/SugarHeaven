@@ -1,0 +1,35 @@
+#slikket {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 8px;
+}
+
+#knapper_med_katagorier button {
+  width: 120px;
+  height: 50px;
+}
+
+#knapper_med_katagorier {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.bn33 {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #a2f4ff, #e287e5);
+  padding: 0.7em 2em;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  transition: box-shadow 0.25s;
+  color: white;
+  border-radius: 16px;
+  /* text-align: center; */
+  /* * jeg ved ikke helt hvorfor jeg ikke kan aligne teksten */
+}
+
+button {
+  margin: 0.5rem;
+}

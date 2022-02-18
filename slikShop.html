@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mutual.css" />
+    <link rel="stylesheet" href="slikShop.css" />
     <title>Slik shop</title>
   </head>
   <body>
@@ -17,10 +18,10 @@
       </div>
       <div class="nav_sidebar">
         <ul class="BurgerNav">
-          <li><a href="">Forsiden</a></li>
-          <li><a href="">Shop</a></li>
+          <li><a href="forside.html">Forsiden</a></li>
+          <li><a href="slikShop.html">Shop</a></li>
           <li><a href="">Kurven</a></li>
-          <li><a href="">Kontakt</a></li>
+          <li><a href="#footer">Kontakt</a></li>
         </ul>
       </div>
       <div class="DeskNav hidden">
@@ -39,16 +40,16 @@
     </header>
     <section>
       <h2></h2>
-      <nav class="knapper_med_katagorier">
+      <nav id="knapper_med_katagorier">
         <button data-kategori="alt" class="bn33">Alt</button>
-        <button data-kategori="chokolade" class="bn33">chokolade</button>
+        <button data-kategori="chokolade" class="bn33">Chokolade</button>
         <button data-kategori="skum" class="bn33">Skum</button>
         <button data-kategori="vingummi" class="bn33">Vingummi</button>
         <button data-kategori="surtslik" class="bn33">Surt Slik</button>
         <button data-kategori="bolsjer" class="bn33">Bolsjer</button>
         <button data-kategori="tyggegummi" class="bn33">Tyggegummi</button>
-        <button data-kategori="karamel" class="bn33">karamel</button>
-        <button data-kategori="lakrids" class="bn33">lakrids</button>
+        <button data-kategori="karamel" class="bn33">Karamel</button>
+        <button data-kategori="lakrids" class="bn33">Lakrids</button>
       </nav>
     </section>
     <section id="slikket">
@@ -61,6 +62,83 @@
       </template>
     </section>
 
+    <script>
+      //  ---------------------------------------------------------------------------------
+
+      const url = "https://tema7slik-1f37.restdb.io/rest/slik";
+      // settings, (test data, tag link, husk at fjerne max
+      // key = database, API keys, manage dem --> Selve nøglen
+
+      const options = {
+        headers: {
+          "x-apikey": "620e5bf934fd621565858739",
+        },
+      };
+
+      let json;
+      let myKatogri = "alt";
+
+      const main = document.querySelector("#slikket");
+      const template = document.querySelector("template").content;
+      const header = document.querySelector("#overskrift");
+      // const modal = document.querySelector("#modal");
+      // OKAY OKAY!! Så nede i min asynkrone funktion henter jeg altså både
+      // min nøgle og mit link og venter på at det et hentet så jeg kan vise det
+      document.addEventListener("DOMContentLoaded", start);
+
+      function start() {
+        console.log("start");
+        const filterKnapper = document.querySelectorAll(
+          "#knapper_med_katagorier button"
+        );
+        filterKnapper.forEach((knap) =>
+          knap.addEventListener("click", filtrerKategorier)
+        );
+
+        async function henData() {
+          const resspons = await fetch(url, options);
+          json = await resspons.json();
+          vis(json, myKatogri);
+        }
+
+        henData();
+      }
+
+      function filtrerKategorier() {
+        console.log("filtrerKategorier");
+        let klikketPaa = this.dataset.kategori;
+        console.log("klikketPaa :" + klikketPaa);
+        //   document.querySelector(".valgt").classList.remove("valgt");
+        //   this.classList.add("valgt");
+
+        header.textContent = this.textContent;
+        vis(json, klikketPaa);
+      }
+
+      function vis(json, x) {
+        console.log(json);
+
+        main.textContent = "";
+        json.forEach((slik) => {
+          if (slik.kategori == x || x == "alt") {
+            const klon = template.cloneNode(true);
+
+            klon.querySelector(".billedeurl").src =
+              "tema7billeder/" + slik.billede + ".jpg";
+            klon.querySelector(".navn").textContent = slik.navn;
+
+            klon.querySelector(".pris").textContent = slik.pris + " kr.";
+
+            klon.querySelector("article").addEventListener("click", () => {
+              location.href = `singleView.html?id=${slik._id}`;
+            });
+            main.appendChild(klon);
+          }
+        });
+
+        console.log(myKatogri);
+      }
+    </script>
     <script src="forside.js"></script>
   </body>
 </html>
