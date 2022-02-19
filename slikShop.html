@@ -11,10 +11,10 @@
   <body>
     <nav class="BurgerNav-DeskNav">
       <div class="burger_menu">
-        <img src="/billeder/burgerMenuTest/menu.svg" alt="" />
+        <img src="/svg/burgerMenuLogo.svg" alt="" />
       </div>
       <div class="burger_menu_luk">
-        <img src="/billeder/burgerMenuTest/luk_menuen.svg" alt="" />
+        <img src="/svg/krydsLogo.svg" alt="" />
       </div>
       <div class="nav_sidebar">
         <ul class="BurgerNav">
@@ -124,7 +124,7 @@
             const klon = template.cloneNode(true);
 
             klon.querySelector(".billedeurl").src =
-              "tema7billeder/" + slik.billede + ".jpg";
+              "tema7billeder1/" + slik.billede + ".jpg";
             klon.querySelector(".navn").textContent = slik.navn;
 
             klon.querySelector(".pris").textContent = slik.pris + " kr.";

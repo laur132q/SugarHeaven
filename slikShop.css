@@ -12,6 +12,7 @@
 #knapper_med_katagorier {
   display: flex;
   flex-flow: wrap;
+  background-image: none;
 }
 
 .bn33 {
