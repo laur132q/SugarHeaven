@@ -5,6 +5,19 @@
   gap: 8px;
 }
 
+#art_slik {
+  margin: 7%;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 137, 255);
+}
+
+#tekst_box {
+  border-top: 2px solid rgb(255, 137, 255);
+  padding: 5%;
+}
+
 /* TODO Vi skal have lave nogle media quries til når skærmen bliver større */
 /* & ----- GRID SLUT----- */
 
