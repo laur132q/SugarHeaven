@@ -61,14 +61,19 @@
     <!-- * -------MAIN STARTER HER ------------->
     <main>
       <article>
-        <img src="" alt="" class="billede" />
+        <div class="grid item">
+          <img src="" alt="" class="billede" />
+        </div>
+        
+       <div class="grid item">
         <h2 class="navn"></h2>
         <p class="smag"></p>
         <p class="ingredienser"></p>
         <p class="pris"></p>
+        <button id="ShopVidere">Shop videre</button>
+        <button id="Kurven">Lig i Kurven</button>
+       </div>
       </article>
-      <button id="ShopVidere">Shop videre</button>
-      <button id="Kurven">Lig i Kurven</button>
     </main>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
