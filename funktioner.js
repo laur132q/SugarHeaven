@@ -39,7 +39,7 @@ function toggleMenuLuk() {
   lukbtn.classList.toggle("hidden");
 }
 
-var x = window.matchMedia("(minmax-width:500px,720px)");
+var x = window.matchMedia("(max-width:720px)");
 
 x.addListener(myFunction);
 myFunction(x);
