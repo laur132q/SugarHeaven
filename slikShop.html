@@ -84,31 +84,33 @@
 
     <section>
       <nav id="knapper_med_katagorier">
-        <button data-kategori="alt" class="SHOP-KATAGORIER-KNAPPER">Alt</button>
-        <button data-kategori="chokolade" class="SHOP-KATAGORIER-KNAPPER">
-          Chokolade
-        </button>
-        <button data-kategori="skum" class="SHOP-KATAGORIER-KNAPPER">
-          Skum
-        </button>
-        <button data-kategori="vingummi" class="SHOP-KATAGORIER-KNAPPER">
-          Vingummi
-        </button>
-        <button data-kategori="surtslik" class="SHOP-KATAGORIER-KNAPPER">
-          Surt Slik
-        </button>
-        <button data-kategori="bolsjer" class="SHOP-KATAGORIER-KNAPPER">
-          Bolsjer
-        </button>
-        <button data-kategori="tyggegummi" class="SHOP-KATAGORIER-KNAPPER">
-          Tyggegummi
-        </button>
-        <button data-kategori="karamel" class="SHOP-KATAGORIER-KNAPPER">
-          Karamel
-        </button>
-        <button data-kategori="lakrids" class="SHOP-KATAGORIER-KNAPPER">
-          Lakrids
-        </button>
+        <div data-kategori="alt" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Alt</p>
+        </div>
+        <div data-kategori="chokolade" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Chokolade</p>
+        </div>
+        <div data-kategori="skum" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Skum</p>
+        </div>
+        <div data-kategori="vingummi" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Vingummi</p>
+        </div>
+        <div data-kategori="surtslik" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Surt Slik</p>
+        </div>
+        <div data-kategori="bolsjer" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Bolsjer</p>
+        </div>
+        <div data-kategori="tyggegummi" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Tyggegummi</p>
+        </div>
+        <div data-kategori="karamel" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Karamel</p>
+        </div>
+        <div data-kategori="lakrids" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Lakrids</p>
+        </div>
       </nav>
     </section>
 
@@ -147,7 +149,7 @@
       function start() {
         console.log("start");
         const filterKnapper = document.querySelectorAll(
-          "#knapper_med_katagorier button"
+          "#knapper_med_katagorier div"
         );
         filterKnapper.forEach((knap) =>
           knap.addEventListener("click", filtrerKategorier)

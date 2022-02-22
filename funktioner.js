@@ -2,6 +2,8 @@
 const btn = document.querySelector(".burger_menu");
 const lukbtn = document.querySelector(".burger_menu_luk");
 const nav = document.querySelector(".nav_sidebar");
+const TopTekst = document.querySelector(".topInformation");
+const DeskNav = document.querySelector(".DeskNav");
 
 // ^ så får jeg siden til at loade, altså når siden har loaded så skal den gå til funktionen
 // ^ "sidenVises"
@@ -35,4 +37,20 @@ function toggleMenuLuk() {
 
   btn.classList.toggle("hidden");
   lukbtn.classList.toggle("hidden");
+}
+
+var x = window.matchMedia("(minmax-width:500px,720px)");
+
+x.addListener(myFunction);
+myFunction(x);
+
+function myFunction(x) {
+  if (x.matches) {
+    btn.classList.toggle("hidden");
+    lukbtn.classList.toggle("hidden");
+    nav.classList.toggle("hidden");
+  } else {
+    TopTekst.classList.remove("hidden");
+    DeskNav.classList.remove("hidden");
+  }
 }
