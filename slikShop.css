@@ -1,3 +1,16 @@
+/* first section */
+
+#first_section {
+  text-align: center;
+  margin: 40px;
+}
+
+/* kategoritekst */
+
+#overskrift {
+  text-align: center;
+}
+
 /* & ----- HER LAVES GRIDET SOM SLIKKET STÅR I------ */
 #slikket {
   display: grid;
