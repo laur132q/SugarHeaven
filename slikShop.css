@@ -58,13 +58,15 @@
 
 /* * ----- Størrelsen på knapperne og deres flex funktion */
 #knapper_med_katagorier div {
-  width: 119px;
-  height: 60px;
+  width: 232px;
+  height: 110px;
+  gap: 10px;
+  margin: 10px;
 }
 
 #knapper_med_katagorier div p {
   text-align: center;
-  padding-top: 22px;
+  padding-top: 50px;
 }
 
 #knapper_med_katagorier {
