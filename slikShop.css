@@ -30,12 +30,18 @@
 /* & ----- GRID SLUT----- */
 
 /* * ----- Størrelsen på knapperne og deres flex funktion */
-#knapper_med_katagorier button {
+#knapper_med_katagorier div {
   width: 120px;
   height: 50px;
 }
 
-#knapper_med_katagorier {
+
+#knapper_med_katagorier div p {
+  text-align: center;
+  padding-top: 22px;
+}
+
+#knapper_med_katagorier  {
   display: flex;
   flex-flow: wrap;
   background-image: none;
@@ -43,67 +49,19 @@
 
 .SHOP-KATAGORIER-KNAPPER {
   /* DE her skal selvfølgelig lave det her om til skyerne */
-  border: 5em;
-  cursor: pointer;
-  outline: none;
-  font-size: 16px;
-  transform: translate(0);
-  background-image: linear-gradient(45deg, #a2f4ff, #e287e5);
-  padding: 0.7em 2em;
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-  transition: box-shadow 0.25s;
-  color: white;
-  border-radius: 16px;
+  background-image: url(svg/pinkSky.svg);
+
+  top: 25%;
+  left: 8%;
+  width: 10%;
+  height: 10%;
+  background-size: cover;
+  aspect-ratio: 298/138;
 }
 button {
   margin: 0.5rem;
 }
 /* * ----- SLUT-------- */
-
-#logoNeon {
-  /* color: #fff; */
-  filter: drop-shadow(
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #f09,
-    0 0 82px #f09,
-    0 0 92px #f09,
-    0 0 102px #f09,
-    0 0 151px #f09
-  );
-  animation: pulsate 0.11s ease-in-out infinite alternate;
-}
-
-@keyframes pulsate {
-    
-  100% {
-
-      filter: drop-shadow(
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 19px #fff,
-      0 0 40px #f09,
-      0 0 80px #f09,
-      0 0 90px #f09,
-      0 0 100px #f09,
-      0 0 150px #f09
-      )
-  }
-  
-  0% {
-
-    filter: drop-shadow(
-    0 0 4px #fff,
-    0 0 10px #fff,
-    0 0 18px #fff,
-    0 0 38px #f09,
-    0 0 73px #f09,
-    0 0 80px #f09,
-    0 0 94px #f09,
-    0 0 140px #f09
-    )
-}     
 
 /* & ------- Forskellige klasses med fx hover efekter skal være her ------- */
 .valgt {
