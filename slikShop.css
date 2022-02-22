@@ -18,6 +18,14 @@
   padding: 5%;
 }
 
+@media (min-width: 600px) {
+  #slikket {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 8px;
+  }
+}
+
 /* TODO Vi skal have lave nogle media quries til når skærmen bliver større */
 /* & ----- GRID SLUT----- */
 
