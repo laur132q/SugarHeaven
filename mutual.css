@@ -145,16 +145,52 @@ h3 {
 /* *------- Footer style------ */
 
 footer {
-  outline: none;
-  transform: translate(0);
   background-image: linear-gradient(45deg, #7bdce9, #e287e5);
+  display: grid;
+  max-width: 100vw;
 }
 
-#footer_sky {
-  /* object-position: bottom; */
-  position: fixed;
-  bottom: 0px;
-  place-items: ;
+footer img {
+  grid-area: 1/1;
+  margin-bottom: -16px;
+  /* overflow: hidden; */
 }
+
+footer #tekst_footer {
+  text-align: center;
+}
+
+footer address {
+  margin: 20px;
+}
+
+footer p {
+  margin: 40px;
+}
+
+#footer_betaling {
+  width: 60%;
+  height: auto;
+}
+
+#socialemedier {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  width: 20%;
+  height: auto;
+  display: inline-block;
+
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+/* 
+#footer_instagram {
+  grid-area: 2/2;
+}
+
+#footer_facebook {
+  grid-area: 1/2;
+} */
 
 /* *------- Footer style SLUT------ */
