@@ -58,21 +58,34 @@
 
 /* * ----- Størrelsen på knapperne og deres flex funktion */
 #knapper_med_katagorier div {
-  width: 232px;
-  height: 110px;
+  width: 130px;
+  height: 60px;
   gap: 10px;
   margin: 10px;
 }
 
 #knapper_med_katagorier div p {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 #knapper_med_katagorier {
   display: flex;
   flex-flow: wrap;
   background-image: none;
+}
+
+@media (min-width: 600px) {
+  #knapper_med_katagorier div {
+    width: 232px;
+    height: 110px;
+    gap: 10px;
+    margin: 10px;
+  }
+  #knapper_med_katagorier div p {
+    text-align: center;
+    padding-top: 50px;
+  }
 }
 
 .SHOP-KATAGORIER-KNAPPER {
