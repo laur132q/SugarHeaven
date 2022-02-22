@@ -24,6 +24,35 @@ nav {
   z-index: 100;
 }
 
+/* FONTE */
+h1,
+h2 {
+  font-family: grafolita-script, sans-serif;
+
+  font-weight: 700;
+
+  font-style: normal;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #ea9cd1;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p,
+h3 {
+  font-size: 1rem;
+  font-family: forma-djr-deck, sans-serif;
+
+  font-weight: 500;
+
+  font-style: normal;
+}
+
 /* TODO Her skal vi også have planlagt hvad h1, h2, h3  og a (links) hvilken font farve og størrelse de hver især skal have  */
 
 /* & ------- GENERELLE TING SLUT------------ */
@@ -71,8 +100,18 @@ nav {
   text-decoration: none;
   color: blueviolet;
   right: 0;
-  margin: 1rem;
+  margin: 2rem;
   z-index: 1000;
+  font-size: 30px;
+  padding: 1fr;
+}
+.BurgerNav {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 30px;
+  list-style: none;
 }
 /* * ------------Selve burger menuen SLUT--------- */
 
@@ -104,8 +143,13 @@ nav {
 /* & -------------- MAIN SLUT--------------------- */
 
 /* *------- Footer style------ */
+#footer_skyer {
+}
 
 footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   outline: none;
   transform: translate(0);
   background-image: linear-gradient(45deg, #7bdce9, #e287e5);

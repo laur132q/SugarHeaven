@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mutual.css" />
     <link rel="stylesheet" href="slikShop.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/lmp0nhq.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/lmp0nhq.css" />
     <title>Slik shop</title>
   </head>
   <body>
@@ -30,21 +32,25 @@
       <div class="nav_sidebar">
         <ul class="BurgerNav">
           <!-- <li><a href="forside.html">Forsiden</a></li> -->
-          <li><a href="slikShop.html">Shop</a></li>
-          <li><a href="slikShop.html#EndFooter">Kontakt</a></li>
+          <li>
+            <a href="slikShop.html"> <p>Shop</p></a>
+          </li>
+          <li>
+            <a href="slikShop.html#EndFooter"> <p>Kontakt</p></a>
+          </li>
         </ul>
       </div>
       <!-- ! Her starter Desktop navigationen (Den har klassen hidden på) -->
       <!-- ? Det her er den der lille skrift helt oppe i toppen over navigationen i Desktop version -->
       <div class="topInformation hidden">
         <ul>
-          Mere end 10.000 tilfredse kunder
+          <p>Mere end 10.000 tilfredse kunder</p>
         </ul>
         <ul>
-          Frifragt for over 100 kr.
+          <p>Frifragt for over 100 kr.</p>
         </ul>
         <ul>
-          Hurtigt levering!
+          <p>Hurtigt levering!</p>
         </ul>
       </div>
       <!-- ? ------- lille skrift slut-------- -->
@@ -84,31 +90,33 @@
 
     <section>
       <nav id="knapper_med_katagorier">
-        <button data-kategori="alt" class="SHOP-KATAGORIER-KNAPPER">Alt</button>
-        <button data-kategori="chokolade" class="SHOP-KATAGORIER-KNAPPER">
-          Chokolade
-        </button>
-        <button data-kategori="skum" class="SHOP-KATAGORIER-KNAPPER">
-          Skum
-        </button>
-        <button data-kategori="vingummi" class="SHOP-KATAGORIER-KNAPPER">
-          Vingummi
-        </button>
-        <button data-kategori="surtslik" class="SHOP-KATAGORIER-KNAPPER">
-          Surt Slik
-        </button>
-        <button data-kategori="bolsjer" class="SHOP-KATAGORIER-KNAPPER">
-          Bolsjer
-        </button>
-        <button data-kategori="tyggegummi" class="SHOP-KATAGORIER-KNAPPER">
-          Tyggegummi
-        </button>
-        <button data-kategori="karamel" class="SHOP-KATAGORIER-KNAPPER">
-          Karamel
-        </button>
-        <button data-kategori="lakrids" class="SHOP-KATAGORIER-KNAPPER">
-          Lakrids
-        </button>
+        <div data-kategori="alt" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Alt</p>
+        </div>
+        <div data-kategori="chokolade" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Chokolade</p>
+        </div>
+        <div data-kategori="skum" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Skum</p>
+        </div>
+        <div data-kategori="vingummi" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Vingummi</p>
+        </div>
+        <div data-kategori="surtslik" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Surt Slik</p>
+        </div>
+        <div data-kategori="bolsjer" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Bolsjer</p>
+        </div>
+        <div data-kategori="tyggegummi" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Tyggegummi</p>
+        </div>
+        <div data-kategori="karamel" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Karamel</p>
+        </div>
+        <div data-kategori="lakrids" class="SHOP-KATAGORIER-KNAPPER">
+          <p>Lakrids</p>
+        </div>
       </nav>
     </section>
 
@@ -147,7 +155,7 @@
       function start() {
         console.log("start");
         const filterKnapper = document.querySelectorAll(
-          "#knapper_med_katagorier button"
+          "#knapper_med_katagorier div"
         );
         filterKnapper.forEach((knap) =>
           knap.addEventListener("click", filtrerKategorier)
@@ -199,6 +207,10 @@
     </script>
 
     <!-- & ---- FOOTER STARTER HER-------- -->
+    <div id="footer_skyer">
+      <img src="svg/footer_skyer.svg" alt="footer_skyer" />
+    </div>
+
     <footer id="EndFooter">
       <p>Betalings muligheder</p>
       <!-- <div> Her inde skal der være et billede af betalings muligheder</div> -->
