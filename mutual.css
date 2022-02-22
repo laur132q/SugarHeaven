@@ -104,8 +104,13 @@ nav {
 /* & -------------- MAIN SLUT--------------------- */
 
 /* *------- Footer style------ */
+#footer_skyer {
+}
 
 footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   outline: none;
   transform: translate(0);
   background-image: linear-gradient(45deg, #7bdce9, #e287e5);
