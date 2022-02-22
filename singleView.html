@@ -98,6 +98,9 @@
 
       <section class="third_section">
         <h2>Andre har også købt</h2>
+        <div class="random_pic">
+          <img src="tema7billeder2/jordbær.webp" width="305" height="312" id="myPicture" alt="some image">
+        </div>
       </section>
       
     </main>
@@ -144,7 +147,15 @@
       //  Her kunne man evt lave en eventlisterner som lytter på vores anden knap og giver kurven et point
 
       // * -----------Her henter vi data fra JSON ----------
-    </script>
+
+      window.onload = choosePic;
+
+      var myPix = new Array("tema7billeder2/ammo.webp","tema7billeder2/bubs.webp", "tema7billeder2/center.webp","kamellorte.webp","tema7billeder2/fruit-tella.webp");
+
+      function choosePic() {
+      var randomNum = Math.floor(Math.random() * myPix.length);
+      document.getElementById("myPicture").src = myPix[randomNum];
+      </script>
 
     <!-- & ---- FOOTER STARTER HER-------- -->
     <footer id="EndFooter">
