@@ -31,11 +31,25 @@
   padding: 5%;
 }
 
+#knapper_med_katagorier {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
 @media (min-width: 600px) {
   #slikket {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 8px;
+  }
+
+  #knapper_med_katagorier {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
   }
 }
 
@@ -48,13 +62,12 @@
   height: 50px;
 }
 
-
 #knapper_med_katagorier div p {
   text-align: center;
   padding-top: 22px;
 }
 
-#knapper_med_katagorier  {
+#knapper_med_katagorier {
   display: flex;
   flex-flow: wrap;
   background-image: none;
