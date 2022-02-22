@@ -22,12 +22,18 @@
 /* & ----- GRID SLUT----- */
 
 /* * ----- Størrelsen på knapperne og deres flex funktion */
-#knapper_med_katagorier button {
+#knapper_med_katagorier div {
   width: 120px;
   height: 50px;
 }
 
-#knapper_med_katagorier {
+
+#knapper_med_katagorier div p {
+  text-align: center;
+  padding-top: 22px;
+}
+
+#knapper_med_katagorier  {
   display: flex;
   flex-flow: wrap;
   background-image: none;
