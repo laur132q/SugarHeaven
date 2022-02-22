@@ -1,4 +1,4 @@
-main {
+.first_section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,5 +6,80 @@ main {
 
 article {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    column-gap: 20px;
+    align-items: center;
+    padding: 20px;
 }
+
+.navn {
+    padding: 20px;
+    padding-left: 0px;
+    color: #FF66CC;
+    text-align: left;
+}
+
+.smag {
+    padding-bottom: 25px;
+}
+
+.ingredienser {
+    padding-bottom: 15px;
+}
+
+.pris {
+    padding-bottom: 15px;
+   /* color: #EA9CD1; */
+}
+
+#Kurven {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #EA9CD1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+#ShopVidere {
+    margin-bottom: -35px;
+    border: none;
+    border-radius: 15px;
+    background-color: #EA9CD1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    padding-right: 34px;
+    padding-left: 34px;
+    cursor: pointer;
+}
+
+.second_section {
+    margin: 20px;
+    margin-left: 70px;
+}
+
+li {
+    list-style-image: url(svg/check.jpg);
+   /* padding-bottom: 20px; */
+ }
+
+ hr {
+    color: #EA9CD1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
+
+ h2 {
+    text-align: center; 
+ }
+ 
+ .third_section {
+    margin-bottom: 50px;
+    font-style: italic;
+
+ }
