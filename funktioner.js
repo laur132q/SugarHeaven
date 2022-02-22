@@ -4,10 +4,15 @@ const lukbtn = document.querySelector(".burger_menu_luk");
 const nav = document.querySelector(".nav_sidebar");
 const TopTekst = document.querySelector(".topInformation");
 const DeskNav = document.querySelector(".DeskNav");
+// const HeleNav = document.querySelector(".BurgerNav-DeskNav");
 
 // ^ så får jeg siden til at loade, altså når siden har loaded så skal den gå til funktionen
 // ^ "sidenVises"
 window.addEventListener("load", sidenVises);
+document.addEventListener("DOMContentLoaded", () => {
+  let resizer = new ResizeObserver(handleResize);
+  resizer.observe(document.querySelector(".BurgerNav-DeskNav"));
+});
 
 // ^I denne funktion gemmer den navigationen væk, og gemmer kryddset væk
 function sidenVises() {
