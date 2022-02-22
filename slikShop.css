@@ -41,15 +41,15 @@
 @media (min-width: 600px) {
   #slikket {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
   }
 
   #knapper_med_katagorier {
     margin: 1px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
   }
 }
 
