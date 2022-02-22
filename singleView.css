@@ -67,6 +67,10 @@ article {
 .second_section li {
     list-style-image: url(svg/check.jpg);
    /* padding-bottom: 20px; */
+    font-size: 1rem;
+    font-family: forma-djr-deck, sans-serif;
+    font-weight: 500;
+    font-style: normal;
  }
 
  hr {
@@ -78,6 +82,7 @@ article {
  h2 {
     text-align: center; 
     margin-bottom: 20px;
+    color: #FF66CC;
  }
  
  .third_section {
@@ -90,7 +95,7 @@ article {
 * {box-sizing:border-box}
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 550px;
   position: relative;
   margin-top: 40px;
   margin-bottom: 0px;
