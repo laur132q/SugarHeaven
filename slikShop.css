@@ -3,6 +3,9 @@
 #first_section {
   text-align: center;
 }
+#first_section p {
+  margin: 20px;
+}
 
 #logoNeon {
   margin-top: 10%;
@@ -94,8 +97,8 @@
 #knapper_med_katagorier div {
   width: 130px;
   height: 60px;
-  gap: 10px;
-  margin: 10px;
+  /* gap: 10px; */
+  /* margin: 10px; */
 }
 
 #knapper_med_katagorier div p {
@@ -106,8 +109,10 @@
 
 #knapper_med_katagorier {
   display: flex;
+  /* min-block-size: 200px; */
   flex-flow: wrap;
-  background-image: none;
+  gap: 10px;
+  justify-content: center;
 }
 
 #knapper_med_katagorier div p:hover {
@@ -129,14 +134,17 @@
     text-align: center;
     padding-top: 25px;
     font-size: 25px;
+    justify-content: space-evenly;
   }
 
-  #knapper_med_katagorier {
-    margin: 1px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
+  /* #knapper_med_katagorier {
+    display: flex; */
+
+  /* gap: 20px; */
+  /* align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  } */
 }
 
 .SHOP-KATAGORIER-KNAPPER {
