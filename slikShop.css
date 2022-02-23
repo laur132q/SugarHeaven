@@ -48,11 +48,20 @@
   border: solid #ea9cd1;
 }
 
+<<<<<<< HEAD
+.SHOP-KATAGORIER-KNAPPER:hover {
+  background-image: linear-gradient(45deg, #7bdce9, #e287e5);
+}
+
+#slikket {
+  margin-top: 100px;
+=======
 <<<<<<< HEAD ======= .SHOP-KATAGORIER-KNAPPER:hover {
   background-image: linear-gradient(45deg, #7bdce9, #e287e5);
 }
 
 >>>>>>>a1253dfadb6ab1a04a2add3c0fb67cdb3c994331 #slikket {
+>>>>>>> eb8e998dbb6f522ba7fdcab57210c005c68867fc
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 8px;
