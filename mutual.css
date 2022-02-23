@@ -31,11 +31,10 @@ img {
 
 .NavBar .navbar-links p {
   font-size: 21px;
-
 }
 
 nav .topInformation p {
-    font-size: 12px;
+  font-size: 12px;
 }
 .navbar-links {
   height: 100%;
@@ -60,9 +59,8 @@ nav .topInformation p {
   /* padding: 0.5rem; */
 }
 
-
 .navbar-links ul a:hover {
- color: mediumpurple;
+  color: mediumpurple;
 }
 @media (max-width: 800px) {
   .navbar {
@@ -90,7 +88,6 @@ nav .topInformation p {
   .navbar-links.active {
     display: flex;
   }
-
 }
 
 @media (min-width: 800px) {
@@ -101,14 +98,12 @@ nav .topInformation p {
     display: inline;
   }
   .topInformation {
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-  outline: none;
-  transform: translate(0);
-  color: white;
-  
-
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    outline: none;
+    transform: translate(0);
+    color: white;
   }
 }
 
@@ -142,7 +137,7 @@ h3 {
 }
 
 address a {
-   font-size: 1rem;
+  font-size: 1rem;
   font-family: forma-djr-deck, sans-serif;
 
   font-weight: 500;
@@ -194,11 +189,6 @@ address a {
 .burger_menu {
   display: flex;
   grid-template-columns: 1fr;
-<<<<<<< HEAD
- 
-=======
-  
->>>>>>> a1253dfadb6ab1a04a2add3c0fb67cdb3c994331
 }
 
 /* * ------------Selve burger menuen SLUT--------- */
@@ -253,7 +243,6 @@ footer address {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-
 }
 
 #footer_facebook {
@@ -263,29 +252,24 @@ footer address {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-
 }
 
 #footer_betaling {
   max-width: 262px;
-  max-height:100px;
+  max-height: 100px;
 }
-
 
 @media (min-width: 600px) {
   #footer_information {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 100px;    
+    margin-top: 100px;
   }
 }
 
 #footer_sky {
   position: relative;
   bottom: 0px;
-
 }
-
-
 
 /* *------- Footer style SLUT------ */
