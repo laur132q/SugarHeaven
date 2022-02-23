@@ -1,98 +1,100 @@
 .first_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 article {
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    column-gap: 20px;
-    align-items: center;
-    padding: 20px;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  column-gap: 20px;
+  align-items: center;
+  padding: 20px;
 }
 
 .navn {
-    padding: 20px;
-    padding-left: 0px;
-    color: #FF66CC;
-    text-align: left;
+  padding: 20px;
+  padding-left: 0px;
+  color: #ff66cc;
+  text-align: left;
 }
 
 .smag {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .ingredienser {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .pris {
-    padding-bottom: 15px;
-   /* color: #EA9CD1; */
+  padding-bottom: 15px;
+  /* color: #EA9CD1; */
 }
 
 #Kurven {
-    margin-bottom: 20px;
-    margin-top: 25px;
-    border: none;
-    border-radius: 15px;
-    background-color: #EA9CD1;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    padding-right: 30px;
-    padding-left: 30px;
-    cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ea9cd1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  cursor: pointer;
 }
 
 #ShopVidere {
-    margin-bottom: -35px;
-    border: none;
-    border-radius: 15px;
-    background-color: #EA9CD1;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    padding-right: 34px;
-    padding-left: 34px;
-    cursor: pointer;
+  margin-bottom: -35px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ea9cd1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  padding-right: 34px;
+  padding-left: 34px;
+  cursor: pointer;
 }
 
 .second_section {
-    margin: 20px;
-    margin-left: 70px;
+  margin: 20px;
+  margin-left: 40%;
 }
 
 .second_section li {
-    list-style-image: url(svg/check.jpg);
-   /* padding-bottom: 20px; */
-    font-size: 1rem;
-    font-family: forma-djr-deck, sans-serif;
-    font-weight: 500;
-    font-style: normal;
- }
+  list-style-image: url(svg/check.jpg);
+  /* padding-bottom: 20px; */
+  font-size: 1rem;
+  font-family: forma-djr-deck, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
- hr {
-    color: #EA9CD1;
-    margin-top: 50px;
-    margin-bottom: 50px;
- }
+hr {
+  color: #ea9cd1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
- h2 {
-    text-align: center; 
-    margin-bottom: 20px;
-    color: #FF66CC;
- }
- 
- .third_section {
-    margin-bottom: 50px;
- }
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff66cc;
+}
+
+.third_section {
+  margin-bottom: 50px;
+}
 
 /* picture slideshow */
 /* Slideshow container */
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 .slideshow-container {
   max-width: 550px;
@@ -108,14 +110,15 @@ article {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #EA9CD1;
+  color: #ea9cd1;
   font-weight: bold;
   font-size: 25px;
   transition: 0.6s ease;
@@ -130,8 +133,9 @@ article {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #EA9CD1;
+.prev:hover,
+.next:hover {
+  background-color: #ea9cd1;
   color: white;
 }
 
@@ -141,14 +145,15 @@ article {
   height: 15px;
   width: 15px;
   margin: 0 3px;
-  background-color: #EA9CD1;
+  background-color: #ea9cd1;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #FF66CC;
+.active,
+.dot:hover {
+  background-color: #ff66cc;
 }
 
 /* Fading animation */
@@ -160,89 +165,97 @@ article {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 850px) {
-    article {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-        align-items: center;
-        padding: 20px;
-    }
+  article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    align-items: center;
+    padding: 20px;
+  }
 
-    .grid_item:last-child {
-        margin-right: 50px;
-    }
+  .grid_item:last-child {
+    margin-right: 50px;
+  }
 
-    .navn {
-        padding: 20px;
-        padding-left: 0px;
-        color: #FF66CC;
-        text-align: left;
-    }
-    
-    .smag {
-        padding-bottom: 25px;
-    }
-    
-    .ingredienser {
-        padding-bottom: 15px;
-    }
-    
-    .pris {
-        padding-bottom: 15px;
-       /* color: #EA9CD1; */
-    }
-    
-    #Kurven {
-        margin-bottom: 15px;
-        border: none;
-        border-radius: 15px;
-        background-color: #EA9CD1;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        padding-right: 30px;
-        padding-left: 30px;
-        cursor: pointer;
-    }
-    
-    #ShopVidere {
-        margin-bottom: -35px;
-        border: none;
-        border-radius: 15px;
-        background-color: #EA9CD1;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        padding-right: 34px;
-        padding-left: 34px;
-        cursor: pointer;
-    }
+  .navn {
+    padding: 20px;
+    padding-left: 0px;
+    color: #ff66cc;
+    text-align: left;
+  }
 
-    .second_section {
-        text-align: left;
-    }
+  .smag {
+    padding-bottom: 25px;
+  }
 
-    .second_section li {
-        margin: 15px;
-    }
+  .ingredienser {
+    padding-bottom: 15px;
+  }
 
-    h2 {
-        margin-bottom: 30px;
-     }
+  .pris {
+    padding-bottom: 15px;
+    /* color: #EA9CD1; */
+  }
 
-    /* Next & previous buttons */
-    .prev, .next {
+  #Kurven {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ea9cd1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+
+  #ShopVidere {
+    margin-bottom: -35px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ea9cd1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    padding-right: 34px;
+    padding-left: 34px;
+    cursor: pointer;
+  }
+
+  .second_section {
+    text-align: left;
+  }
+
+  .second_section li {
+    margin: 15px;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
     font-size: 40px;
   }
-  
 }
