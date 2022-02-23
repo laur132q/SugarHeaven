@@ -173,7 +173,7 @@
               "tema7billeder2/" + slik.billede + ".webp";
             klon.querySelector(".navn").textContent = slik.navn;
 
-            klon.querySelector(".pris").textContent = slik.pris + " kr.";
+            klon.querySelector(".pris").textContent = slik.pris + " kr. per 100g";
 
             klon.querySelector("article").addEventListener("click", () => {
               location.href = `singleView.html?id=${slik._id}`;
