@@ -2,8 +2,11 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
+}
+
+body {
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -16,12 +19,78 @@ img {
   display: none;
 }
 
-nav {
-  /* det er er blot farven på nav baren */
+.NavBar {
+  /* display: flex; */
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
   outline: none;
   transform: translate(0);
   background-image: linear-gradient(45deg, #7bdce9, #e287e5);
-  z-index: 100;
+}
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  /* padding: 0.5rem; */
+}
+
+}
+
+.navbar-links li:hover {
+  /* hvad skal værer vores hover effekt  */
+}
+@media (max-width: 800px) {
+  .navbar {
+    /* flex-direction: column; */
+    align-items: flex-start;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+@media (min-width: 800px) {
+  .burger_menuSVG {
+    display: none;
+  }
+  .burger_menu {
+    display: inline;
+  }
 }
 
 /* FONTE */
@@ -66,16 +135,18 @@ h3 {
   background-repeat: no-repeat;
   cursor: pointer;
   position: absolute;
-  left: 32rem;
+  right: 0;
   top: 0%;
+  padding: 0.5rem;
 }
-.burger_menu {
+.burger_menuSVG {
   max-width: 60px;
   max-height: 60px;
   background-size: 38%;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  grid-area: 1 /1;
 }
 
 .burger_menu_luk {
@@ -85,17 +156,31 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  grid-area: 1 /1;
 }
 
-.nav_sidebar {
+.burger_menu {
+  display: flex;
+  grid-template-columns: 1fr;
+  /* height: 80px; */
+  /* position: absolute; */
+  /* top: 0.75rem;
+  right: 1rem; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between;
+  width: 30px;
+  height: 21px; */
+}
+/* .nav_sidebar {
   z-index: 1000;
   position: absolute;
   background-color: #e287e5;
   width: 300px;
   height: 100vh;
-}
+} */
 
-.BurgerNav a {
+/* .BurgerNav a {
   list-style: none;
   text-decoration: none;
   color: blueviolet;
@@ -104,15 +189,15 @@ h3 {
   z-index: 1000;
   font-size: 30px;
   padding: 1fr;
-}
-.BurgerNav {
+} */
+/* .BurgerNav {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   justify-content: space-around;
   margin-top: 30px;
   list-style: none;
-}
+} */
 /* * ------------Selve burger menuen SLUT--------- */
 
 /* & --------------HER STARTER MAIN--------------------- */
@@ -126,20 +211,6 @@ h3 {
   z-index: 1;
 }
 
-.SHOP {
-  border: 5em;
-  cursor: pointer;
-  outline: none;
-  font-size: 16px;
-  transform: translate(0);
-  background-image: linear-gradient(45deg, #369ca9, #e287e5);
-  padding: 0.7em 2em;
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-  transition: box-shadow 0.25s;
-  color: white;
-  border-radius: 16px;
-  z-index: 1;
-}
 /* & -------------- MAIN SLUT--------------------- */
 
 /* *------- Footer style------ */
