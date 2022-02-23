@@ -3,6 +3,9 @@
 #first_section {
   text-align: center;
 }
+#first_section p {
+  margin: 20px;
+}
 
 #logoNeon {
   margin-top: 10%;
