@@ -5,8 +5,17 @@
 }
 
 #logoNeon {
-  width: 70%;
-  margin-left: 15%;
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 80%;
+}
+
+@media (min-width: 600px) {
+  #logoNeon {
+    margin-left: 30%;
+    margin-top: 5%;
+    width: 40%;
+  }
 }
 
 /* kategoritekst */
