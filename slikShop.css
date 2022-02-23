@@ -57,6 +57,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 8px;
+  margin-bottom: 30px;
 }
 
 #art_slik {
@@ -99,15 +100,15 @@
 
 /* * ----- Størrelsen på knapperne og deres flex funktion */
 #knapper_med_katagorier div {
-  width: 232px;
-  height: 110px;
+  width: 130px;
+  height: 60px;
   gap: 10px;
   margin: 10px;
 }
 
 #knapper_med_katagorier div p {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 #knapper_med_katagorier {
@@ -116,8 +117,28 @@
   background-image: none;
 }
 
+@media (min-width: 600px) {
+  #knapper_med_katagorier div {
+    width: 232px;
+    height: 110px;
+    gap: 10px;
+    margin: 10px;
+  }
+  #knapper_med_katagorier div p {
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+
 .SHOP-KATAGORIER-KNAPPER {
   /* DE her skal selvfølgelig lave det her om til skyerne */
+<<<<<<< HEAD
+  background-image: url(svg/pinkSky.svg);
+  top: 25%;
+  left: 8%;
+  width: 10%;
+  height: 10%;
+=======
   background-image: url(svg/sky_transparent.svg);
 
   top: 20%;
@@ -125,6 +146,7 @@
 
   width: 50%;
   height: 65px;
+>>>>>>> a1d2cd5fecfcef67d300a628826fb06b43b07db2
   background-size: cover;
 
   /* aspect-ratio: 580/277; */
