@@ -12,52 +12,39 @@
   </head>
   <body>
     <!-- & HER STARTER NAVIGATIONEN (MOBILE + DESKTOP) -->
-    <nav class="BurgerNav-DeskNav">
-      <!-- * ------Her er Burger menuen og krydset -->
-      <div class="burger_menu">
-        <img src="/svg/burgerMenuLogo.svg" alt="" />
-      </div>
+    <!-- & HER STARTER NAVIGATIONEN (MOBILE + DESKTOP) --->
+    <header>
+      <div class="topInformation">
+        <p>Mere end 10.000 tilfredse kunder</p>
 
-      <div class="burger_menu_luk">
-        <img src="/svg/krydsLogo.svg" alt="" />
-      </div>
-      <!-- * ------ burger menu og kryds slut -->
+        <p>Frifragt for over 100 kr.</p>
 
+        <p>Hurtigt levering!</p>
+      </div>
+    </header>
+    <nav class="NavBar">
       <!-- HER SKAL DER VÆRE EN TIL DIV SOM SKAL VÆRE VORES INDKØBSKURV -->
+
+      <div class="burger_menu">
+        <img class="burger_menuSVG" src="/svg/burgerMenuLogo.svg" alt="" />
+        <img class="burger_menu_luk hidden" src="/svg/krydsLogo.svg" alt="" />
+        <!-- <img src="svg/kurv.svg" alt="kurv" /> -->
+      </div>
       <div class="kurv">
         <img src="svg/kurv.svg" alt="kurv" />
       </div>
-      <!--^ NÅR MAN ÅBNER BURGER MENUEN kommer det her   -->
-      <div class="nav_sidebar">
-        <ul class="BurgerNav">
-          <!-- <li><a href="forside.html">Forsiden</a></li> -->
-          <li><a href="slikShop.html">Shop</a></li>
-          <li><a href="singleView.html#EndFooter">Kontakt</a></li>
+      <div class="navbar-links">
+        <ul>
+          <li>
+            <a href="slikShop.html"> <p>Shop</p></a>
+          </li>
+          <li>
+            <a href="slikShop.html#EndFooter"> <p>Kontakt</p></a>
+          </li>
         </ul>
       </div>
-      <!-- ! Her starter Desktop navigationen (Den har klassen hidden på) -->
-      <!-- ? Det her er den der lille skrift helt oppe i toppen over navigationen i Desktop version -->
-      <div class="topInformation hidden">
-        <ul>
-          Mere end 10.000 tilfredse kunder
-        </ul>
-        <ul>
-          Frifragt for over 100 kr.
-        </ul>
-        <ul>
-          Hurtigt levering!
-        </ul>
-      </div>
-      <!-- ? ------- lille skrift slut-------- -->
-      <div class="DeskNav hidden">
-        <ul>
-          <!-- <li><a href="forside.html">Forsiden</a></li> -->
-          <li><a href="slikShop.html">Shop</a></li>
-          <li><a href="singleView.html#EndFooter">Kontakt</a></li>
-        </ul>
-      </div>
-      <!-- ! ------ SLUT ----------->
     </nav>
+
     <!-- & ------ SLUT ------------>
 
     <!-- * -------MAIN STARTER HER ------------->
@@ -67,70 +54,74 @@
           <div class="grid_item">
             <img src="" alt="" class="billede" />
           </div>
-          
-         <div class="grid_item">
-          <h2 class="navn"></h2>
-          <p class="smag"></p>
-          <p class="ingredienser"></p>
-          <p class="pris"></p>
-          <button id="Kurven">Læg i Kurven</button>
-          <br>
-          <button id="ShopVidere">Shop videre</button>
-         </div>
+
+          <div class="grid_item">
+            <h2 class="navn"></h2>
+            <p class="smag"></p>
+            <p class="ingredienser"></p>
+            <p class="pris"></p>
+            <button id="Kurven">Læg i Kurven</button>
+            <br />
+            <button id="ShopVidere">Shop videre</button>
+          </div>
         </article>
       </section>
 
-      <hr>
-      
+      <hr />
+
       <section class="second_section">
         <ul>
-          <li>Fri fragt ved køb over 100,- 
-            <br>
-            Fragt fra kun 35,-</li>
-          <li>Hurtig levering 
-            <br>
-            Vi leverer dag til dag</li>
-          <li>Tilfredse kunder
-            <br>
-            Vi har mere end 10.000 tilfredse kunder</li>
+          <li>
+            Fri fragt ved køb over 100,-
+            <br />
+            Fragt fra kun 35,-
+          </li>
+          <li>
+            Hurtig levering
+            <br />
+            Vi leverer dag til dag
+          </li>
+          <li>
+            Tilfredse kunder
+            <br />
+            Vi har mere end 10.000 tilfredse kunder
+          </li>
         </ul>
       </section>
 
-      <hr>
+      <hr />
 
       <section class="third_section">
         <h2>Andre har også købt</h2>
 
         <!-- Slideshow container -->
-      <div class="slideshow-container">
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="tema7billeder2/regnbuestang.webp" style="width: 100%" />
+          </div>
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <img src="tema7billeder2/regnbuestang.webp" style="width:100%">
+          <div class="mySlides fade">
+            <img src="tema7billeder2/dumle.webp" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="tema7billeder2/ammo.webp" style="width: 100%" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-
-        <div class="mySlides fade">
-            <img src="tema7billeder2/dumle.webp" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="tema7billeder2/ammo.webp" style="width:100%">
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-        <br>
+        <br />
 
         <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
       </section>
-      
     </main>
     <script>
       const urlParams = new URLSearchParams(window.location.search);
@@ -182,29 +173,33 @@
 
       // Next/previous controls
       function plusSlides(n) {
-      showSlides(slideIndex += n);
+        showSlides((slideIndex += n));
       }
 
       // Thumbnail image controls
       function currentSlide(n) {
-      showSlides(slideIndex = n);
+        showSlides((slideIndex = n));
       }
 
       function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1} 
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-      }
-      for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-      }
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
 
-      slides[slideIndex-1].style.display = "block"; 
-      dots[slideIndex-1].className += " active";
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
       }
     </script>
 
