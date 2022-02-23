@@ -136,8 +136,6 @@ h3 {
   font-style: normal;
 }
 
-
-
 address a {
   font-size: 1rem;
   font-family: forma-djr-deck, sans-serif;
@@ -165,7 +163,7 @@ address a {
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: 2;
+  top: 2%;
   padding: 0.5rem;
 }
 .burger_menuSVG {
