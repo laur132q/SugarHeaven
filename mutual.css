@@ -164,16 +164,14 @@ footer address {
   margin: 20px;
 }
 
-<<<<<<< HEAD
 #footer_sky {
   /* object-position: bottom; */
   position: fixed;
   bottom: 0px;
+}
   
-=======
 footer p {
   margin: 40px;
->>>>>>> a1d2cd5fecfcef67d300a628826fb06b43b07db2
 }
 
 #footer_betaling {
