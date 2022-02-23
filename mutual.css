@@ -20,7 +20,6 @@ img {
 }
 
 .NavBar {
-  /* display: flex; */
   position: relative;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +27,15 @@ img {
   outline: none;
   transform: translate(0);
   background-image: linear-gradient(45deg, #7bdce9, #e287e5);
+}
+
+.NavBar .navbar-links p {
+  font-size: 21px;
+
+}
+
+nav .topInformation p {
+    font-size: 12px;
 }
 .navbar-links {
   height: 100%;
@@ -51,7 +59,6 @@ img {
   /* padding: 0.5rem; */
 }
 
-}
 
 .navbar-links li:hover {
   /* hvad skal værer vores hover effekt  */
@@ -82,6 +89,7 @@ img {
   .navbar-links.active {
     display: flex;
   }
+
 }
 
 @media (min-width: 800px) {
@@ -90,6 +98,16 @@ img {
   }
   .burger_menu {
     display: inline;
+  }
+  .topInformation {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  outline: none;
+  transform: translate(0);
+  color: white;
+  
+
   }
 }
 
@@ -136,7 +154,7 @@ h3 {
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: 0%;
+  top: 3;
   padding: 0.5rem;
 }
 .burger_menuSVG {
@@ -162,42 +180,9 @@ h3 {
 .burger_menu {
   display: flex;
   grid-template-columns: 1fr;
-  /* height: 80px; */
-  /* position: absolute; */
-  /* top: 0.75rem;
-  right: 1rem; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between;
-  width: 30px;
-  height: 21px; */
+  
 }
-/* .nav_sidebar {
-  z-index: 1000;
-  position: absolute;
-  background-color: #e287e5;
-  width: 300px;
-  height: 100vh;
-} */
 
-/* .BurgerNav a {
-  list-style: none;
-  text-decoration: none;
-  color: blueviolet;
-  right: 0;
-  margin: 2rem;
-  z-index: 1000;
-  font-size: 30px;
-  padding: 1fr;
-} */
-/* .BurgerNav {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px;
-  justify-content: space-around;
-  margin-top: 30px;
-  list-style: none;
-} */
 /* * ------------Selve burger menuen SLUT--------- */
 
 /* & --------------HER STARTER MAIN--------------------- */
