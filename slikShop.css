@@ -12,6 +12,47 @@
 }
 
 /* & ----- HER LAVES GRIDET SOM SLIKKET STÅR I------ */
+
+.SHOP {
+  margin: 30px;
+  margin-bottom: -35px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ea9cd1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  padding-right: 34px;
+  padding-left: 34px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.SHOP:hover {
+  background-color: white;
+  color: #ea9cd1;
+  border: solid #ea9cd1;
+}
+
+/* .SHOP {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #369ca9, #e287e5);
+  padding: 0.7em 2em;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  transition: box-shadow 0.25s;
+  color: white;
+  border-radius: 16px;
+  z-index: 1;
+} */
+
+.SHOP-KATAGORIER-KNAPPER:hover {
+  background-image: linear-gradient(45deg, #7bdce9, #e287e5);
+}
+
 #slikket {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -42,15 +83,15 @@
 @media (min-width: 600px) {
   #slikket {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
   }
 
   #knapper_med_katagorier {
     margin: 1px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
   }
 }
 
