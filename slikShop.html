@@ -47,30 +47,32 @@
     </nav>
 
     <!-- *-------HER STARER MAIN--------- -->
+     <section id="first_section">
     <header>
       <img id="logoNeon" src="svg/sugar_logo.svg" alt="" />
     </header>
 
-    <section id="first_section">
+   <div id="tekst_knap">
       <article>
-        <h1>Velkommen!</h1>
+
         <p>
-          Velkommen til Sugar Heavnes Slik himmel. <br> Her er alt hvad hjerte
-          begærer, du kan slik-shoppe online og få det sendt hjem til dig <br> eller
+          Velkommen! <br> til Sugar Heavnes Slik himmel. Her er alt hvad hjerte
+          begærer, du kan slik-shoppe online og få det sendt hjem til dig eller
           du kan tjekke vores udvalg og komme ind i vores fysiske butik.
         </p>
       </article>
       <a href="slikShop.html#knapper_med_katagorier">
         <button class="SHOP">SHOP</button></a
       >
+      </div>
     </section>
-    <header>
+    <!-- <header>
       <h2 id="overskrift">Alt</h2>
-    </header>
+    </header> -->
 
     <section>
       <nav id="knapper_med_katagorier">
-        <div data-kategori="alt" class="SHOP-KATAGORIER-KNAPPER">
+        <div data-kategori="alt" class="valgt SHOP-KATAGORIER-KNAPPER">
           <p>Alt</p>
         </div>
         <div data-kategori="chokolade" class="SHOP-KATAGORIER-KNAPPER">
@@ -154,8 +156,9 @@
         console.log("filtrerKategorier");
         let klikketPaa = this.dataset.kategori;
         console.log("klikketPaa :" + klikketPaa);
-        //   document.querySelector(".valgt").classList.remove("valgt");
-        //   this.classList.add("valgt");
+          //gør at knappen bliver fremhævet efter man har klikket på den
+      document.querySelector(".valgt").classList.remove("valgt");
+      this.classList.add("valgt");
 
         header.textContent = this.textContent;
         vis(json, klikketPaa);
