@@ -1,23 +1,28 @@
-/* first section */
-
-#first_section {
-  text-align: center;
-}
-#first_section p {
-  margin: 20px;
-}
-
-#logoNeon {
-  margin-top: 10%;
-  margin-left: 10%;
-  width: 80%;
+#tekst_knap {
+  margin-top: 60%;
+  margin: 10%;
 }
 
 @media (min-width: 600px) {
   #logoNeon {
-    margin-left: 30%;
-    margin-top: 5%;
-    width: 40%;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 100%;
+  }
+
+  #first_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* text-align: center; */
+    /* margin-top: 7%; */
+  }
+
+  #tekst_knap {
+    margin-top: 55%;
+  }
+  .SHOP {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -25,13 +30,15 @@
 
 #overskrift {
   text-align: center;
+  color: #ff66cc;
+  margin-top: 50px;
 }
 
 /* & ----- HER LAVES GRIDET SOM SLIKKET STÅR I------ */
 
 .SHOP {
   margin: 30px;
-  margin-bottom: -35px;
+  margin-bottom: 30px;
   border-radius: 15px;
   background-color: #ea9cd1;
   color: white;
@@ -75,11 +82,27 @@
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 137, 255);
+  border-radius: 12%;
+  overflow: hidden;
 }
 
+.billedeurl {
+  /* border-radius: 12%; */
+  object-fit: cover;
+  cursor: pointer;
+}
 #tekst_box {
   border-top: 2px solid rgb(255, 137, 255);
   padding: 5%;
+  /* border-radius: 5%; */
+}
+
+.pris {
+  font-size: 0.9rem;
+}
+
+.pris {
+  font-size: 0.9rem;
 }
 
 @media (min-width: 600px) {
@@ -88,6 +111,11 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
   }
+}
+
+#ligeSHOPknap {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* TODO Vi skal have lave nogle media quries til når skærmen bliver større */
@@ -113,6 +141,8 @@
   flex-flow: wrap;
   gap: 10px;
   justify-content: center;
+  margin-top: 70px;
+  cursor: pointer;
 }
 
 #knapper_med_katagorier div p:hover {
@@ -163,9 +193,11 @@ button {
 /* * ----- SLUT-------- */
 
 /* & ------- Forskellige klasses med fx hover efekter skal være her ------- */
-/* .valgt { */
+.valgt {
+  background-image: url(svg/sky_transparent.svg);
+}
 /* når man har valgt noget på katagoierne skal skyen udfyldes med radient farve  */
 
-/* Vi skal finde ud af hvor vores hover effekt er til vores katagori knapper også lave den her */
+/* Vi skal finde ud af hvor vores hover effekt er til vores katagori knapper også lave den her
 
 /* & ------- Forskellige klasser SLUT------- */
