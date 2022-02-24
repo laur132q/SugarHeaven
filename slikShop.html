@@ -26,7 +26,7 @@
       </div>
 
       <div class="burger_menu">
-        <img class="burger_menuSVG" src="/svg/burgerMenuLogo.svg" alt="" />
+        <img class="burger_menuSVG" src="" alt="" />
         <img class="burger_menu_luk hidden" src="/svg/krydsLogo.svg" alt="" />
         <!-- <img src="svg/kurv.svg" alt="kurv" /> -->
         <div class="kurv">
@@ -56,19 +56,35 @@
       <article>
 
         <p>
+<<<<<<< HEAD
           Velkommen! <br> til Sugar Heavnes Slik himmel. Her er alt hvad hjerte
           begærer, du kan slik-shoppe online og få det sendt hjem til dig eller
           du kan tjekke vores udvalg og komme ind i vores fysiske butik.
+=======
+          Velkommen til Sugar Heavnes Slik himmel. <br />
+          Her er alt hvad hjerte begærer, du kan slik-shoppe online og få det
+          sendt hjem til dig eller du kan tjekke vores udvalg og komme ind i
+          vores fysiske butik.
+>>>>>>> e91d1b0d2e5759b9218b2a925f23666fbb0330cf
         </p>
       </article>
-      <a href="slikShop.html#knapper_med_katagorier">
-        <button class="SHOP">SHOP</button></a
+
+      <button
+        onclick="location.href='slikShop.html#knapper_med_katagorier'"
+        class="SHOP"
       >
+<<<<<<< HEAD
       </div>
     </section>
     <!-- <header>
       <h2 id="overskrift">Alt</h2>
     </header> -->
+=======
+        SHOP
+      </button>
+    </section>
+    
+>>>>>>> e91d1b0d2e5759b9218b2a925f23666fbb0330cf
 
     <section>
       <nav id="knapper_med_katagorier">
@@ -160,7 +176,7 @@
       document.querySelector(".valgt").classList.remove("valgt");
       this.classList.add("valgt");
 
-        header.textContent = this.textContent;
+        // header.textContent = this.textContent;
         vis(json, klikketPaa);
       }
 
@@ -176,7 +192,8 @@
               "tema7billeder2/" + slik.billede + ".webp";
             klon.querySelector(".navn").textContent = slik.navn;
 
-            klon.querySelector(".pris").textContent = slik.pris + " kr. per 100g";
+            klon.querySelector(".pris").textContent =
+              slik.pris + " kr. per 100g";
 
             klon.querySelector("article").addEventListener("click", () => {
               location.href = `singleView.html?id=${slik._id}`;
@@ -193,28 +210,30 @@
 
     <footer id="EndFooter">
       <section id="footer_information">
-      <div>
-      <p>Kontakt :</p>
-      <address>
-        <a
-          href="https://www.google.com/maps/place/Best+Buy/@33.7981969,-118.1789981,14.73z/data=!4m8!1m2!2m1!1skaty+perry+adresse!3m4!1s0x80dd33d056197b65:0xffc9eb1486da65b4!8m2!3d33.806605!4d-118.16819"
-          >Slikvej 22 <br />
-          5714 Slikstrup</a
-        >
-        <br />
-        <a href="tel:+45 32799935">+45 32799935</a>
-        <br />
-        <a href="mailto:Kontakt@sugarheaven.dk">Mail: Kontakt@sugarheaven.dk</a>
-      </address>
-      </div>
-      <!-- <div> Her inde skal der være et billede af betalings muligheder</div> -->
-      <div id="tekst_footer">
-        <p>Betalings muligheder :</p>
-        <img id="footer_betaling" src="svg/betaling.svg" alt="footer_skyer" />
+        <div>
+          <p>Kontakt :</p>
+          <address>
+            <a
+              href="https://www.google.com/maps/place/Best+Buy/@33.7981969,-118.1789981,14.73z/data=!4m8!1m2!2m1!1skaty+perry+adresse!3m4!1s0x80dd33d056197b65:0xffc9eb1486da65b4!8m2!3d33.806605!4d-118.16819"
+              >Slikvej 22 <br />
+              5714 Slikstrup</a
+            >
+            <br />
+            <a href="tel:+4532799935">+45 32799935</a>
+            <br />
+            <a href="mailto:Kontakt@sugarheaven.dk"
+              >Mail: Kontakt@sugarheaven.dk</a
+            >
+          </address>
         </div>
-        
+        <!-- <div> Her inde skal der være et billede af betalings muligheder</div> -->
+        <div id="tekst_footer">
+          <p>Betalings muligheder :</p>
+          <img id="footer_betaling" src="svg/betaling.svg" alt="footer_skyer" />
+        </div>
+
         <div id="socialemedier">
-        <p>Følg os her :</p>
+          <p>Følg os her :</p>
           <!-- Her inde skal der være instagram og facebook logo -->
           <img
             id="footer_facebook"
@@ -227,10 +246,9 @@
             alt="footer_facebook"
           />
         </div>
-</section>
-        <div id="footer_sky">
-          <img id="footer_sky" src="svg/sky_footer_1.svg" alt="footer_skyer" />
-        </div>
+      </section>
+      <div>
+        <img id="footer_sky" src="svg/sky_footer_1.svg" alt="footer_skyer" />
       </div>
     </footer>
     <!-- & ---- FOOTER SLUT-------- -->

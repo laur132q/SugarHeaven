@@ -30,6 +30,8 @@
 
 #overskrift {
   text-align: center;
+  color: #ff66cc;
+  margin-top: 50px;
 }
 
 /* & ----- HER LAVES GRIDET SOM SLIKKET STÅR I------ */
@@ -80,6 +82,7 @@
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 137, 255);
+<<<<<<< HEAD
   border-radius: 12%;
   overflow: hidden;
 }
@@ -87,12 +90,19 @@
 .billedeurl {
   /* border-radius: 12%; */
   object-fit: cover;
+=======
+  cursor: pointer;
+>>>>>>> e91d1b0d2e5759b9218b2a925f23666fbb0330cf
 }
 
 #tekst_box {
   border-top: 2px solid rgb(255, 137, 255);
   padding: 5%;
   /* border-radius: 5%; */
+}
+
+.pris {
+  font-size: 0.9rem;
 }
 
 @media (min-width: 600px) {
@@ -126,6 +136,8 @@
   flex-flow: wrap;
   gap: 10px;
   justify-content: center;
+  margin-top: 70px;
+  cursor: pointer;
 }
 
 #knapper_med_katagorier div p:hover {
