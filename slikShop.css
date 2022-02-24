@@ -77,11 +77,16 @@
   border-style: solid;
   border-width: 2px;
   border-color: rgb(255, 137, 255);
+  cursor: pointer;
 }
 
 #tekst_box {
   border-top: 2px solid rgb(255, 137, 255);
   padding: 5%;
+}
+
+.pris {
+  font-size: 0.9rem;
 }
 
 @media (min-width: 600px) {
@@ -115,6 +120,8 @@
   flex-flow: wrap;
   gap: 10px;
   justify-content: center;
+  margin-top: 70px;
+  cursor: pointer;
 }
 
 #knapper_med_katagorier div p:hover {
