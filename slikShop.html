@@ -15,8 +15,6 @@
     <!-- Her starter navigationen -->
 
     <nav class="NavBar">
-     
-
       <div class="topInformation hidden">
         <p>Mere end 10.000 tilfredse kunder</p>
 
@@ -44,8 +42,7 @@
         </ul>
       </div>
     </nav>
-
-    <!-- *-------HER STARER MAIN--------- -->
+    <!---------HER STARER MAIN--------- -->
      <section id="first_section">
     <header>
       <img id="logoNeon" src="svg/sugar_logo.svg" alt="" />
@@ -69,7 +66,6 @@
         SHOP
     </button>
 </div>
-
     </div>
     </section>
    
@@ -78,7 +74,7 @@
       <h2 id="overskrift">Alt</h2>
     </header> 
     
-<!-- Alle katagori knapper, de har en data tag på, så vi kan tage referer til dem i java script -->
+<!-- Alle katagori knapper, de har et data tag, så vi kan tage fat i dem i java script -->
     <section>
       <nav id="knapper_med_katagorier">
         <div data-kategori="alt" class="valgt SHOP-KATAGORIER-KNAPPER">
@@ -147,7 +143,7 @@
 // Vi venter på at DOM'en er Loaded
       document.addEventListener("DOMContentLoaded", start);
 
-// Alle knapperne er valgt, og vi lytter efter at de kan blive klikket på
+// Alle knapperne er valgt og bliver lyttet på, og vi lytter efter at de kan blive klikket på en
 // hvis de bliver klikket på skal den gå til "filtrerKategorier"
       function start() {
         console.log("start");
@@ -167,8 +163,8 @@
 
         henData();
       }
-      // Her er der blevet trykket på en knap. 
-      // og vi viser dem i vores templates
+      // Bliver der trykket på en knap, så starter "filtrerKategorier" funktion 
+      // også bliver det vist i det filtret JSON data
 
       function filtrerKategorier() {
         console.log("filtrerKategorier");
@@ -185,17 +181,23 @@
       function vis(json, x) {
         console.log(json);
 
-        main.textContent = "";
+        main.textContent = ""; 
+        // Vi fjerner det tidligere data
         json.forEach((slik) => {
           if (slik.kategori == x || x == "alt") {
             const klon = template.cloneNode(true);
+            // Vis den katagori som er blevet trykket
+            // så skal den katagori vises 
+            // hvis ikke så skal funktionen vise alle objekter
 
             klon.querySelector(".billedeurl").src =
               "tema7billeder2/" + slik.billede + ".webp";
             klon.querySelector(".navn").textContent = slik.navn;
-
+// Vis billeder
+// vis navnet på det ene objekt
             klon.querySelector(".pris").textContent =
               slik.pris + " kr. per 100g";
+// Udskriv prisen 
 
 // Hvis man klikker på en article, går den videre til singleView side, 
             klon.querySelector("article").addEventListener("click", () => {

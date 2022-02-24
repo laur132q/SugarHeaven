@@ -100,6 +100,10 @@
 .pris {
   font-size: 0.9rem;
 }
+#ligeSHOPknap {
+  display: flex;
+  justify-content: space-evenly;
+}
 /* Her er det grid som vores silk bliver vist i */
 @media (min-width: 600px) {
   #slikket {
@@ -109,13 +113,9 @@
   }
 }
 
-#ligeSHOPknap {
-  display: flex;
-  justify-content: space-evenly;
-}
 /* & ----- GRID SLUT----- */
 
-/* * ----- Størrelsen på knapperne og deres flex funktion */
+/* Størrelsen på knapperne */
 #knapper_med_katagorier div {
   width: 130px;
   height: 60px;
@@ -125,23 +125,28 @@
   text-align: center;
   padding-top: 15px;
   color: mediumpurple;
+  /* styling af teksten */
 }
 
 #knapper_med_katagorier {
-  display: flex;
+  display: flex; 
   flex-flow: wrap;
   gap: 10px;
   justify-content: center;
   margin-top: 70px;
   cursor: pointer;
+  /* Bruger flex for at få knapperne til at ligge på linje og bruges flex wrap 
+  til at få knapperne til at folde sig sammen */
 }
 
 #knapper_med_katagorier div p:hover {
   color: white;
+  /* når man hover bliver teksten hvid */
 }
 
 .SHOP-KATAGORIER-KNAPPER:hover {
   background-image: url(svg/sky_gradient_fyldt.svg);
+  /* skyen bliver fyldt ud med gradient farve */
 }
 
 @media (min-width: 600px) {

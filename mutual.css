@@ -40,7 +40,7 @@ nav .topInformation p {
   margin-top: 1px;
 }
 nav .topInformation {
-  background-color: mediumpurple;
+  background-color: #c19bda;
   height: 15px;
 }
 .navbar-links {
@@ -65,7 +65,7 @@ nav .topInformation {
 }
 
 .navbar-links ul a:hover {
-  color: mediumpurple;
+  color: #c19bda;
 }
 @media (max-width: 800px) {
   .navbar {
