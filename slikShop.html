@@ -22,7 +22,7 @@
 
         <p>Hurtigt levering!</p>
       </div>
-<!-- Her har vi sat svg'er ind som fungere som vores burger menu -->
+      <!-- Her har vi sat svg'er ind som fungere som vores burger menu -->
       <div class="burger_menu">
         <img class="burger_menuSVG" src="svg/burgerMenuLogo.svg" alt="" />
         <img class="burger_menu_luk hidden" src="svg/krydsLogo.svg" alt="" />
@@ -43,38 +43,37 @@
       </div>
     </nav>
     <!---------HER STARER MAIN--------- -->
-     <section id="first_section">
-    <header>
-      <img id="logoNeon" src="svg/sugar_logo.svg" alt="" />
-    </header>
+    <section id="first_section">
+      <header>
+        <img id="logoNeon" src="svg/sugar_logo.svg" alt="" />
+      </header>
 
-   <div id="tekst_knap">
-      <article>
-
-        <p>
-
-          Velkommen til Sugar Heavnes Slik himmel. <br />
-          Her er alt hvad hjerte begærer, du kan slik-shoppe online og få det
-          sendt hjem til dig eller du kan tjekke vores udvalg og komme ind i
-          vores fysiske butik.
-
-        </p>
-      </article>
-<div id="ligeSHOPknap">
-      <button  onclick="location.href='slikShop.html#knapper_med_katagorier'"
-        class="SHOP">
-        SHOP
-    </button>
-</div>
-    </div>
+      <div id="tekst_knap">
+        <article>
+          <p>
+            Velkommen til Sugar Heavnes Slik himmel. <br />
+            Her er alt hvad hjerte begærer, du kan slik-shoppe online og få det
+            sendt hjem til dig eller du kan tjekke vores udvalg og komme ind i
+            vores fysiske butik.
+          </p>
+        </article>
+        <div id="ligeSHOPknap">
+          <button
+            onclick="location.href='slikShop.html#knapper_med_katagorier'"
+            class="SHOP"
+          >
+            SHOP
+          </button>
+        </div>
+      </div>
     </section>
-   
+
     <!-- Denne her over skrift bliver skiftet ud, når man trykker på en katagori -->
     <header>
       <h2 id="overskrift">Alt</h2>
-    </header> 
-    
-<!-- Alle katagori knapper, de har et data tag, så vi kan tage fat i dem i java script -->
+    </header>
+
+    <!-- Alle katagori knapper, de har et data tag, så vi kan tage fat i dem i java script -->
     <section>
       <nav id="knapper_med_katagorier">
         <div data-kategori="alt" class="valgt SHOP-KATAGORIER-KNAPPER">
@@ -123,8 +122,7 @@
     <script>
       // ----------------------------------------------------------------
 
-
-// Vi laver vores constanter 
+      // Vi laver vores constanter
       const url = "https://tema7slik-1f37.restdb.io/rest/slik";
 
       const options = {
@@ -140,11 +138,11 @@
       const template = document.querySelector("template").content;
       const header = document.querySelector("#overskrift");
 
-// Vi venter på at DOM'en er Loaded
+      // Vi venter på at DOM'en er Loaded
       document.addEventListener("DOMContentLoaded", start);
 
-// Alle knapperne er valgt og bliver lyttet på, og vi lytter efter at de kan blive klikket på en
-// hvis de bliver klikket på skal den gå til "filtrerKategorier"
+      // Alle knapperne er valgt og bliver lyttet på, og vi lytter efter at de kan blive klikket på en
+      // hvis de bliver klikket på skal den gå til "filtrerKategorier"
       function start() {
         console.log("start");
         const filterKnapper = document.querySelectorAll(
@@ -154,7 +152,7 @@
           knap.addEventListener("click", filtrerKategorier)
         );
 
-// Vi henter JSON data
+        // Vi henter JSON data
         async function henData() {
           const resspons = await fetch(url, options);
           json = await resspons.json();
@@ -163,16 +161,16 @@
 
         henData();
       }
-      // Bliver der trykket på en knap, så starter "filtrerKategorier" funktion 
+      // Bliver der trykket på en knap, så starter "filtrerKategorier" funktion
       // også bliver det vist i det filtret JSON data
 
       function filtrerKategorier() {
         console.log("filtrerKategorier");
         let klikketPaa = this.dataset.kategori;
         console.log("klikketPaa :" + klikketPaa);
-          //gør at knappen bliver fremhævet efter man har klikket på den
-      document.querySelector(".valgt").classList.remove("valgt");
-      this.classList.add("valgt");
+        //gør at knappen bliver fremhævet efter man har klikket på den
+        document.querySelector(".valgt").classList.remove("valgt");
+        this.classList.add("valgt");
 
         header.textContent = this.textContent;
         vis(json, klikketPaa);
@@ -181,25 +179,25 @@
       function vis(json, x) {
         console.log(json);
 
-        main.textContent = ""; 
+        main.textContent = "";
         // Vi fjerner det tidligere data
         json.forEach((slik) => {
           if (slik.kategori == x || x == "alt") {
             const klon = template.cloneNode(true);
             // Vis den katagori som er blevet trykket
-            // så skal den katagori vises 
+            // så skal den katagori vises
             // hvis ikke så skal funktionen vise alle objekter
 
             klon.querySelector(".billedeurl").src =
               "tema7billeder2/" + slik.billede + ".webp";
             klon.querySelector(".navn").textContent = slik.navn;
-// Vis billeder
-// vis navnet på det ene objekt
+            // Vis billeder
+            // vis navnet på det ene objekt
             klon.querySelector(".pris").textContent =
               slik.pris + " kr. per 100g";
-// Udskriv prisen 
+            // Udskriv prisen
 
-// Hvis man klikker på en article, går den videre til singleView side, 
+            // Hvis man klikker på en article, går den videre til singleView side,
             klon.querySelector("article").addEventListener("click", () => {
               location.href = `singleView.html?id=${slik._id}`;
             });
@@ -230,7 +228,6 @@
               >Mail: Kontakt@sugarheaven.dk</a
             >
           </address>
-
         </div>
 
         <div id="tekst_footer">
@@ -238,13 +235,9 @@
           <img id="footer_betaling" src="svg/betaling.svg" alt="footer_skyer" />
         </div>
 
-        </div>
-       
-
-
         <div id="socialemedier">
           <p>Følg os her :</p>
-         <!-- Logo af facebook og instagram -->
+          <!-- Logo af facebook og instagram -->
           <img
             id="footer_facebook"
             src="svg/facebook.svg"
