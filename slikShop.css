@@ -9,12 +9,10 @@
     margin-left: 5%;
     width: 100%;
   }
-
+  /* Det her griddet til vores forside */
   #first_section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* text-align: center; */
-    /* margin-top: 7%; */
   }
 
   #tekst_knap {
@@ -35,7 +33,7 @@
 }
 
 /* & ----- HER LAVES GRIDET SOM SLIKKET STÅR I------ */
-
+/* Det her er vores shop knap */
 .SHOP {
   margin: 30px;
   margin-bottom: 30px;
@@ -87,14 +85,12 @@
 }
 
 .billedeurl {
-  /* border-radius: 12%; */
   object-fit: cover;
   cursor: pointer;
 }
 #tekst_box {
   border-top: 2px solid rgb(255, 137, 255);
   padding: 5%;
-  /* border-radius: 5%; */
 }
 
 .pris {
@@ -104,7 +100,7 @@
 .pris {
   font-size: 0.9rem;
 }
-
+/* Her er det grid som vores silk bliver vist i */
 @media (min-width: 600px) {
   #slikket {
     display: grid;
@@ -117,16 +113,12 @@
   display: flex;
   justify-content: space-evenly;
 }
-
-/* TODO Vi skal have lave nogle media quries til når skærmen bliver større */
 /* & ----- GRID SLUT----- */
 
 /* * ----- Størrelsen på knapperne og deres flex funktion */
 #knapper_med_katagorier div {
   width: 130px;
   height: 60px;
-  /* gap: 10px; */
-  /* margin: 10px; */
 }
 
 #knapper_med_katagorier div p {
@@ -137,7 +129,6 @@
 
 #knapper_med_katagorier {
   display: flex;
-  /* min-block-size: 200px; */
   flex-flow: wrap;
   gap: 10px;
   justify-content: center;
@@ -166,19 +157,10 @@
     font-size: 25px;
     justify-content: space-evenly;
   }
-
-  /* #knapper_med_katagorier {
-    display: flex; */
-
-  /* gap: 20px; */
-  /* align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  } */
 }
 
 .SHOP-KATAGORIER-KNAPPER {
-  /* DE her skal selvfølgelig lave det her om til skyerne */
+  /* Her ses vores sky knapper */
   top: 25%;
   left: 8%;
   width: 10%;
@@ -197,7 +179,6 @@ button {
   background-image: url(svg/sky_transparent.svg);
 }
 /* når man har valgt noget på katagoierne skal skyen udfyldes med radient farve  */
-
-/* Vi skal finde ud af hvor vores hover effekt er til vores katagori knapper også lave den her
+/* Men vi har ikke kunne gå det til at virke */
 
 /* & ------- Forskellige klasser SLUT------- */

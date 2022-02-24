@@ -26,13 +26,10 @@ img {
   outline: none;
   transform: translate(0);
   background-image: linear-gradient(45deg, #7bdce9, #e287e5);
-  /* height: 70px; */
 }
 
 .NavBar .navbar-links p {
   font-size: 18px;
-  /* top: 0; */
-  /* position: fixed; */
   display: flex;
   justify-content: flex-start;
 }
@@ -65,8 +62,6 @@ nav .topInformation {
   display: block;
   text-decoration: none;
   color: white;
-  /* border:solid */
-  /* padding: 0.5rem; */
 }
 
 .navbar-links ul a:hover {
@@ -74,7 +69,6 @@ nav .topInformation {
 }
 @media (max-width: 800px) {
   .navbar {
-    /* flex-direction: column; */
     align-items: flex-start;
   }
   .navbar-links {
@@ -155,8 +149,6 @@ address a {
   text-align: center;
 }
 
-/* TODO Her skal vi også have planlagt hvad h1, h2, h3  og a (links) hvilken font farve og størrelse de hver især skal have  */
-
 /* & ------- GENERELLE TING SLUT------------ */
 
 /* * ------------Selve burger menuen--------- */
@@ -183,7 +175,6 @@ address a {
   top: 15%;
   margin-top: 5px;
   padding: 0.5rem;
-  /* background-image: url(svg/burgerMenuLogo.svg); */
 }
 
 .burger_menu_luk {
@@ -194,6 +185,7 @@ address a {
   background-repeat: no-repeat;
   cursor: pointer;
   grid-area: 1 /1;
+  padding: 0.5rem;
 }
 
 .burger_menu {
@@ -231,7 +223,6 @@ footer {
 footer img {
   grid-area: 1/1;
   margin-bottom: -16px;
-  /* overflow: hidden; */
 }
 
 footer #tekst_footer {

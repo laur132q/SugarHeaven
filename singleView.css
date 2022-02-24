@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .first_section {
   display: flex;
   flex-direction: column;
@@ -6,7 +10,6 @@
 
 article {
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
   column-gap: 20px;
   align-items: center;
   padding: 20px;
@@ -35,7 +38,6 @@ article {
 
 .pris {
   padding-bottom: 15px;
-  /* color: #EA9CD1; */
 }
 
 #Kurven {
@@ -77,20 +79,6 @@ article {
   border: solid #ea9cd1;
 }
 
-/*
-.second_section {
-  margin: 20px;
-}
-
-.second_section li {
-  list-style-image: url(svg/check.jpg);
-  /* padding-bottom: 20px; */
-  /* font-size: 1rem;
-  font-family: forma-djr-deck, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-} */
-
 hr {
   color: #ea9cd1;
   margin-top: 50px;
@@ -105,13 +93,6 @@ h2 {
 
 .third_section {
   margin-bottom: 50px;
-}
-
-/* picture slideshow */
-/* Slideshow container */
-
-* {
-  box-sizing: border-box;
 }
 
 .slideshow-container {
@@ -192,7 +173,7 @@ h2 {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+/* Transistion af billedet  */
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -211,8 +192,8 @@ h2 {
   }
 }
 
-@media (max-width: 850px){
-  .first_section img{
+@media (max-width: 850px) {
+  .first_section img {
     width: 300px;
     height: 300px;
   }
@@ -243,7 +224,7 @@ h2 {
     margin-right: 50px;
   }
 
-  .first_section img{
+  .first_section img {
     width: 500px;
     height: 500px;
   }
@@ -268,32 +249,6 @@ h2 {
     padding-bottom: 15px;
     /* color: #EA9CD1; */
   }
-
-  /* #Kurven {
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 15px;
-    background-color: #ea9cd1;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    padding-right: 30px;
-    padding-left: 30px;
-    cursor: pointer;
-  }
-
-  #ShopVidere {
-    margin-bottom: -35px;
-    border: none;
-    border-radius: 15px;
-    background-color: #ea9cd1;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    padding-right: 34px;
-    padding-left: 34px;
-    cursor: pointer;
-  } */
 
   .second_section {
     text-align: left;
