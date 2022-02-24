@@ -27,15 +27,25 @@ img {
   outline: none;
   transform: translate(0);
   background-image: linear-gradient(45deg, #7bdce9, #e287e5);
-  height: 60px;
+  /* height: 70px; */
 }
 
 .NavBar .navbar-links p {
-  font-size: 21px;
+  font-size: 18px;
+  /* top: 0; */
+  /* position: fixed; */
+  display: flex;
+  justify-content: flex-start;
 }
 
 nav .topInformation p {
   font-size: 12px;
+  font-style: italic;
+  margin-top: 1px;
+}
+nav .topInformation {
+  background-color: mediumpurple;
+  height: 15px;
 }
 .navbar-links {
   height: 100%;
@@ -45,11 +55,11 @@ nav .topInformation p {
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: space-around;
 }
 
 .navbar-links li {
   list-style: none;
+  margin-left: 20px;
 }
 
 .navbar-links li a {
@@ -156,16 +166,16 @@ address a {
 
 /* * ------------Selve burger menuen--------- */
 .kurv {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 55px;
+  max-height: 55px;
   background-size: 38%;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: 2%;
-  padding: 0.5rem;
+  margin-top: 3px;
+  /* padding: 0.5rem; */
 }
 .burger_menuSVG {
   max-width: 60px;
@@ -175,9 +185,9 @@ address a {
   background-repeat: no-repeat;
   cursor: pointer;
   grid-area: 1 /1;
-  top: 10%;
-  margin: 1fr;
-  background-image: url(svg/burgerMenuLogo.svg);
+  top: 15%;
+  margin-top: 5px;
+  /* background-image: url(svg/burgerMenuLogo.svg); */
 }
 
 .burger_menu_luk {
