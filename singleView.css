@@ -77,6 +77,7 @@ article {
   border: solid #ea9cd1;
 }
 
+/*
 .second_section {
   margin: 20px;
 }
@@ -84,11 +85,11 @@ article {
 .second_section li {
   list-style-image: url(svg/check.jpg);
   /* padding-bottom: 20px; */
-  font-size: 1rem;
+  /* font-size: 1rem;
   font-family: forma-djr-deck, sans-serif;
   font-weight: 500;
   font-style: normal;
-}
+} */
 
 hr {
   color: #ea9cd1;
