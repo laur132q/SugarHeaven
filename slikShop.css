@@ -113,6 +113,11 @@
   }
 }
 
+#ligeSHOPknap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /* TODO Vi skal have lave nogle media quries til når skærmen bliver større */
 /* & ----- GRID SLUT----- */
 
