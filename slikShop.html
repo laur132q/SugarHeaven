@@ -26,8 +26,8 @@
       </div>
 
       <div class="burger_menu">
-        <img class="burger_menuSVG" src="" alt="" />
-        <img class="burger_menu_luk hidden" src="/svg/krydsLogo.svg" alt="" />
+        <img class="burger_menuSVG" src="svg/burgerMenuLogo.svg" alt="" />
+        <img class="burger_menu_luk hidden" src="svg/krydsLogo.svg" alt="" />
         <!-- <img src="svg/kurv.svg" alt="kurv" /> -->
         <div class="kurv">
           <img src="svg/kurv.svg" alt="kurv" />
@@ -37,7 +37,7 @@
       <div class="navbar-links">
         <ul>
           <li>
-            <a href="slikShop.html"> <p>Shop</p></a>
+            <a href="slikShop.html"><p>Shop</p></a>
           </li>
           <li>
             <a href="slikShop.html#EndFooter"> <p>Kontakt</p></a>
@@ -47,33 +47,41 @@
     </nav>
 
     <!-- *-------HER STARER MAIN--------- -->
+     <section id="first_section">
     <header>
       <img id="logoNeon" src="svg/sugar_logo.svg" alt="" />
     </header>
 
-    <section id="first_section">
+   <div id="tekst_knap">
       <article>
-        <h1>Velkommen!</h1>
+
         <p>
+
           Velkommen til Sugar Heavnes Slik himmel. <br />
           Her er alt hvad hjerte begærer, du kan slik-shoppe online og få det
           sendt hjem til dig eller du kan tjekke vores udvalg og komme ind i
           vores fysiske butik.
+
         </p>
       </article>
-
-      <button
-        onclick="location.href='slikShop.html#knapper_med_katagorier'"
-        class="SHOP"
-      >
+<div id="ligeSHOPknap">
+      <button  onclick="location.href='slikShop.html#knapper_med_katagorier'"
+        class="SHOP">
         SHOP
-      </button>
+    </button>
+</div>
+
+    </div>
     </section>
+   
+    <header>
+      <h2 id="overskrift">Alt</h2>
+    </header> 
     
 
     <section>
       <nav id="knapper_med_katagorier">
-        <div data-kategori="alt" class="SHOP-KATAGORIER-KNAPPER">
+        <div data-kategori="alt" class="valgt SHOP-KATAGORIER-KNAPPER">
           <p>Alt</p>
         </div>
         <div data-kategori="chokolade" class="SHOP-KATAGORIER-KNAPPER">
@@ -157,10 +165,11 @@
         console.log("filtrerKategorier");
         let klikketPaa = this.dataset.kategori;
         console.log("klikketPaa :" + klikketPaa);
-        //   document.querySelector(".valgt").classList.remove("valgt");
-        //   this.classList.add("valgt");
+          //gør at knappen bliver fremhævet efter man har klikket på den
+      document.querySelector(".valgt").classList.remove("valgt");
+      this.classList.add("valgt");
 
-        // header.textContent = this.textContent;
+        header.textContent = this.textContent;
         vis(json, klikketPaa);
       }
 
@@ -209,12 +218,21 @@
               >Mail: Kontakt@sugarheaven.dk</a
             >
           </address>
+
         </div>
         <!-- <div> Her inde skal der være et billede af betalings muligheder</div> -->
         <div id="tekst_footer">
           <p>Betalings muligheder :</p>
           <img id="footer_betaling" src="svg/betaling.svg" alt="footer_skyer" />
         </div>
+
+        </div>
+        <!-- <div> Her inde skal der være et billede af betalings muligheder</div> -->
+        <!-- <div id="tekst_footer">
+          <p>Betalings muligheder :</p>
+          <img id="footer_betaling" src="svg/betaling.svg" alt="footer_skyer" />
+        </div> -->
+
 
         <div id="socialemedier">
           <p>Følg os her :</p>
