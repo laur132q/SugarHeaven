@@ -170,7 +170,7 @@ address a {
   position: absolute;
   right: 0;
   margin-top: 3px;
-  /* padding: 0.5rem; */
+  padding: 0.5rem;
 }
 .burger_menuSVG {
   max-width: 60px;
@@ -182,6 +182,7 @@ address a {
   grid-area: 1 /1;
   top: 15%;
   margin-top: 5px;
+  padding: 0.5rem;
   /* background-image: url(svg/burgerMenuLogo.svg); */
 }
 
